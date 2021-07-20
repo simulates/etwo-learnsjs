@@ -99,3 +99,50 @@ function getFullName(firstName, lastName) {
 // Sample usage - do not modify
 console.log(getFullName("Sam", "Doe")); // "Sam Doe"
 console.log(getFullName("Alex", "Blue")); // "Alex Blue"
+
+
+function capitalize(word) {
+    return word[0].toUpperCase() + word.substring(1).toLowerCase()
+} // Returns one capital rest lowercase for names eg
+
+// Sample usage - do not modify
+console.log(capitalize("sam")); // "Sam"
+console.log(capitalize("ALEX")); // "Alex"
+console.log(capitalize("chARLie")); // "Charlie"
+
+
+/** @param {string} name */
+export function getNumberOfChars(name) {
+    // number of characters in: name
+    return name.length
+}
+
+/** @param {string} name */
+export function getFirstChar(name) {
+    // first character of: name
+    return name[0]
+}
+
+/** @param {string} name */
+export function getLastChar(name) {
+    // last character of: name
+    return name [name.length - 1]
+}
+
+/** @param {string} name */
+export function getLower(name) {
+    // name all in lower case (example: "ABC" becomes "abc")
+ return name.toLowerCase();
+}
+
+/** @param {string} name */
+export function getUpper(name) {
+    // name all in upper case (example: "abc" becomes "ABC")
+    return name.toUpperCase();
+}
+
+/** @param {string} name */
+export function getCapitalized(name) {
+    // capitalized version of name (example: "alEX" becomes "Alex")
+    return name[0].toUpperCase() + name.substring(1).toLowerCase();
+}
